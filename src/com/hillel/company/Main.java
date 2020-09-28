@@ -8,6 +8,44 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //region FirstTab
+        ApiStream.filterArray();
+        //endregion
+
+        //region SecondTab
+        SecondTab.filterCitiesArray();
+        //endregion
+
+        //region ThirdTab
+        ThirdTab.filterCitiesWithForEach();
+        ThirdTab.smthWithPhones();
+        //endregion
+
+        //region FourthTab
+        FourthTab.sorting();
+        //endregion
+
+        //region FifthTab
+        FifthTab.streamWhile();
+        //endregion
+
+        //region SixthTab
+        SixthTab.streamSkipLimit();
+        //endregion
+
+        //region SeventhTab
+        SeventhTab.streamFindMatch();
+        //endregion
+
+        //region EighthsTab
+        EightsTba.streamReduce();
+        //endregion
+
+        //region NinesTab
+        NinesTab.streamOptional();
+        //endregion
+
+        //region MethodCollect
         //region Task1
         List <String> phones = new ArrayList<String>();
         Collections.addAll(phones, "iPhone 8", "HTC U12", "Huawei Nexus 6P",
@@ -49,7 +87,6 @@ public class Main {
         filteredPhonesHashSet.forEach(ks-> System.out.println(ks));
         //endregion
 
-
         //region Task4
 
         ArrayList <String> filteredPhonesArrList = phones.stream().filter(s -> s.length()<12)
@@ -60,5 +97,9 @@ public class Main {
 
         System.out.println(Arrays.toString(filteredPhonesArrList.toArray()));
         //endregion
+        //endregion
+
+
+
     }
 }
